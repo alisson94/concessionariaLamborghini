@@ -1,0 +1,275 @@
+@font-face{
+	font-family:alcubierre;
+	src:url(Alcubierre.otf);
+}
+@font-face{
+	font-family: 'fontello';
+	src: url('fontello/font/fontello.eot?20215653');
+	src: url('fontello/font/fontello.eot?20215653#iefix') format('embedded-opentype'),
+		url('fontello/font/fontello.woff2?20215653') format('woff2'),
+    	url('fontello/font/fontello.woff?20215653') format('woff'),
+    	url('fontello/font/fontello.ttf?20215653') format('truetype'),
+    	url('fontello/font/fontello.svg?20215653#fontello') format('svg');
+}
+body{
+	background-color: #fff;
+	margin: 0px;
+	padding: 0px;
+	font-family: arial, sans-serif;
+	background-image: url("imagens/background/FOTO 2-3.jpg");
+	background-repeat: no-repeat;
+}
+div#menu{
+	background-color: rgba(0,0,0,.7);
+	height: 110px;
+	position: fixed;
+	width: 100%;
+	z-index: 1;
+}
+div#menu ul{
+	list-style: none;
+	margin-top: -0px;
+}
+div#menu ul li{
+	display: inline;
+	position: relative;
+	top: -25px;
+	left: -50px;
+}
+a#select{
+	color: red;
+	border-bottom: 2.5px solid #f4c72c;
+}
+#iconlogo{
+	position: relative;
+	top: 10px;
+	left:-60px;
+}
+div#menu ul li a{
+	display: inline-block;
+	text-decoration: none;
+	padding:20px 15px;
+	color: #fff;
+	margin-top: -50px;
+	margin-left: -5px;
+	padding-bottom: 38px;
+}
+div#menu ul li a:hover{
+	color: #f4c72c;
+	border-bottom: 2.5px solid #f4c72c;
+}
+div#box-search{
+	position: fixed;
+	top:40px;
+	left:1100px;
+	z-index: 1;
+}
+div#box-search input{
+	color: #fff;
+	height: 30px;
+	border: none;
+	outline: none;
+	background: none;
+	border: 1px solid #f4c72c;
+	border-radius: 20px;
+	padding-left: 8px;
+	z-index: 1;
+}
+div#box-search button{
+	border: none;
+	position: relative;
+	right: 37px;
+	background: none;
+	cursor: pointer;
+}
+div#box-search button:focus{
+	outline: none;
+}
+div#logo{
+	position: absolute;
+	top: 120px;
+	left: 30px;
+	font-family: alcubierre;
+}
+div#logo .word1{
+	font-size: 45px;
+	color: #fff;
+	font-weight: bolder;
+}
+div#logo .word2{
+	display: inline-block;
+	font-size: 35px;
+	background-color: #fff;
+	padding: 5px;
+	font-style: italic;
+	position: relative;
+	top: -85px;
+	left: 225px;
+}
+p.frase{
+	margin-right: 0px;
+	font-family: alcubierre;
+	font-size: 20px;
+	color: #fff;
+	position: absolute;
+	top: 500px;
+	left: 980px;
+	padding-bottom: 10px;
+	border-bottom: 3px solid #fff;
+}
+div#main{
+	position: absolute;
+	top:105%;
+	background-image: url(imagens/background/padrao.jpg);
+	background-color: #ede;
+	width: 98.5%;
+	padding: 10px;
+	height: 550px;
+	z-index: 2;
+}
+div#main ul{
+	list-style: none;
+	margin-top: 160px;
+	margin-left: -20px;
+}
+div#main ul li{
+	display: inline-block;
+}
+div#main ul li{
+	height:250px;
+	width:390px;
+	padding:10px;
+	margin:10px;
+	background-image: url(imagens/news1.jpg);
+	background-size: 100% 100%;
+	font-size: 18px;
+	transition: all .15s;
+}
+div#main ul li#veneno{
+	background-image: url(imagens/news2.jpg);
+}
+div#main ul li#aventador{
+	background-image: url(imagens/news3.jpg);
+	position: relative;
+	top: 17px;
+}
+.legend{
+	padding-bottom: 5px;
+	border-bottom: 1px solid none;
+	transition: .5s;
+}
+.sublegend{
+	font-size: 14px;
+	opacity: 0;
+	transition: .3s .2s;
+}
+div#main ul li:hover .legend{
+	color: #f4c72c;
+	border-bottom: 1px solid #f4c72c;
+}
+div#main ul li:hover .sublegend{
+	opacity: 1; 
+}
+div#main ul li:hover{
+	transform: scale(1.05);
+	border-radius: 5px;
+	box-shadow: 2px 2px 10px black;
+}
+div#main ul li a{
+	text-decoration: none;
+	color: #fff;
+}
+div#main2{
+	position: absolute;
+	top: 185%;
+	width: 100%;
+	height: 880px;
+	background-image: url("imagens/background/FOTO 10-4.jpg");
+	background-size: 1920px 880px;
+	background-position: -100px 0px;
+	background-repeat: no-repeat;
+	box-shadow: 0px 0px 20px black;
+	z-index: 2;
+}
+div#main2 p#title{
+	display: inline-block;
+	z-index: 1;
+	font-family: alcubierre;
+	font-size: 55px;
+	color: #fff;
+	padding-right: 10px;
+	margin-top: 90px;
+	margin-left: 50px;
+	border-bottom: 8px solid #fff;
+}
+div#main2 p#text{
+	z-index: 1;
+	font-family: alcubierre;
+	font-size: 30px;
+	color: #fff;
+	margin-left: 50px;
+	margin-right: 200px;
+	line-height: 35px;
+}
+footer{
+	background-image: url(imagens/background/padrao2.jpg);
+	background-color: black;
+	text-align: center;
+	width: 100%;
+	position: absolute;
+	top: 315%;
+	/*top: 190%;*/
+	color: #fff;
+	box-shadow: 0px 0px 40px black;
+	z-index: 2;
+}
+footer p{
+	display: inline-block;
+	padding: 4px;
+	font-size: 13px;
+	color: #fff;
+}
+footer p:hover{
+	cursor: default;
+}
+footer a.button{
+	position: relative;
+	left: 360px;
+	bottom: 10px;
+	display: inline-block;
+	text-decoration: none;
+	font-size: 20px;
+	color: #fff;
+	padding: 8px 10px 8px 10px;
+	background-color: #f4c72c;
+	border-radius: 5px;
+	transition: all .2s;
+	font-family: 'fontello';
+}
+footer a.button:hover{
+	transform: scale(1.05);
+}
+footer h2{
+	position: relative;
+	left: -31px;
+}
+footer ul{
+	list-style: none;
+}
+footer ul li{
+	display: inline-block;
+}
+footer ul li a{
+	display: block;
+	position: relative;
+	left: -42px;
+	text-decoration: none;
+	font-family: 'fontello';
+	font-size: 24px;
+	color: #fff;
+	margin-right: 20px;
+	transition: all .3s ease .05s;
+}
+footer ul li a:hover{
+	color: #f4c72c;
+}
